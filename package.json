@@ -1,0 +1,24 @@
+{
+  "name": "pactum-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js",
+    "test:gql": "mocha ./test/graphql/**/*.test.js",
+    "test:rest": "mocha ./test/**/*.test.js",
+    "test:contProvider": "mocha ./test/contract/loginProvider.test.js",
+    "test:contConsumer": "mocha ./test/contract/loginConsumer.test.js"
+  },
+  "keywords": [],
+  "author": "PalomaDev",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^11.7.1",
+    "pactum": "^3.8.0"
+  },
+  "dependencies": {
+    "pactum-flow-plugin": "^0.1.4",
+    "pactum-matchers": "^1.1.7"
+  }
+}
